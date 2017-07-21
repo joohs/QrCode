@@ -15,6 +15,9 @@
 		61B2CF991F2196E200D3541F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B2CF971F2196E200D3541F /* LaunchScreen.storyboard */; };
 		61B2CFA41F2196E200D3541F /* QrCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B2CFA31F2196E200D3541F /* QrCodeTests.m */; };
 		61B2CFAF1F2196E200D3541F /* QrCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B2CFAE1F2196E200D3541F /* QrCodeUITests.m */; };
+		61B2CFBE1F21972400D3541F /* BDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B2CFBD1F21972400D3541F /* BDQRCode.m */; };
+		61B2CFC11F21977200D3541F /* NSData+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B2CFC01F21977200D3541F /* NSData+Utility.m */; };
+		61B2CFC31F219B1800D3541F /* 便捷开票二维码应用规范.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 61B2CFC21F219B1800D3541F /* 便捷开票二维码应用规范.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		61B2CFAA1F2196E200D3541F /* QrCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QrCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B2CFAE1F2196E200D3541F /* QrCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QrCodeUITests.m; sourceTree = "<group>"; };
 		61B2CFB01F2196E200D3541F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B2CFBC1F21972400D3541F /* BDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDQRCode.h; sourceTree = "<group>"; };
+		61B2CFBD1F21972400D3541F /* BDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDQRCode.m; sourceTree = "<group>"; };
+		61B2CFBF1F21977200D3541F /* NSData+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utility.h"; sourceTree = "<group>"; };
+		61B2CFC01F21977200D3541F /* NSData+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utility.m"; sourceTree = "<group>"; };
+		61B2CFC21F219B1800D3541F /* 便捷开票二维码应用规范.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "便捷开票二维码应用规范.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				61B2CF8D1F2196E200D3541F /* AppDelegate.m */,
 				61B2CF8F1F2196E200D3541F /* ViewController.h */,
 				61B2CF901F2196E200D3541F /* ViewController.m */,
+				61B2CFBC1F21972400D3541F /* BDQRCode.h */,
+				61B2CFBD1F21972400D3541F /* BDQRCode.m */,
+				61B2CFBF1F21977200D3541F /* NSData+Utility.h */,
+				61B2CFC01F21977200D3541F /* NSData+Utility.m */,
+				61B2CFC21F219B1800D3541F /* 便捷开票二维码应用规范.pdf */,
 				61B2CF921F2196E200D3541F /* Main.storyboard */,
 				61B2CF951F2196E200D3541F /* Assets.xcassets */,
 				61B2CF971F2196E200D3541F /* LaunchScreen.storyboard */,
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B2CF991F2196E200D3541F /* LaunchScreen.storyboard in Resources */,
+				61B2CFC31F219B1800D3541F /* 便捷开票二维码应用规范.pdf in Resources */,
 				61B2CF961F2196E200D3541F /* Assets.xcassets in Resources */,
 				61B2CF941F2196E200D3541F /* Main.storyboard in Resources */,
 			);
@@ -276,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B2CFC11F21977200D3541F /* NSData+Utility.m in Sources */,
 				61B2CF911F2196E200D3541F /* ViewController.m in Sources */,
+				61B2CFBE1F21972400D3541F /* BDQRCode.m in Sources */,
 				61B2CF8E1F2196E200D3541F /* AppDelegate.m in Sources */,
 				61B2CF8B1F2196E200D3541F /* main.m in Sources */,
 			);
@@ -429,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 435YL4NF9J;
 				INFOPLIST_FILE = QrCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuxiangxiong.lcd.QrCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 435YL4NF9J;
 				INFOPLIST_FILE = QrCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuxiangxiong.lcd.QrCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
